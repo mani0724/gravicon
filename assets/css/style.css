@@ -398,8 +398,8 @@
   line-height: 85px;
   text-align: center;
   border-radius: 50px;
-  color: var(--color-two);
-  background-color: var(--color-six);
+  color: #fff;
+  background-color: #44120e;
 }
 
 .about-one_content-column {
@@ -612,7 +612,7 @@
   right: 0px;
   bottom: 0px;
   opacity: 0.8;
-  background-color: var(--color-ten);
+  background-color: #dfb259;
 }
 
 .cta-one_ball {
@@ -805,11 +805,11 @@
   text-align: center;
   line-height: 70px;
   border-radius: 0px 15px 0px 0px;
-  background-color: var(--color-nine);
 
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(225, 143, 77, 1);
+  background: linear-gradient(90deg, #dfb259, #441200);
+
+  color: #09094c;
+  -webkit-text-stroke: 1px #dfb259;
 }
 
 /*** 
@@ -964,6 +964,7 @@
   position: relative;
   z-index: 1;
   display: inline-block;
+  margin-left: 30px;
 }
 
 .services-three_tiles {
@@ -4523,7 +4524,7 @@
   display: inline-block;
   letter-spacing: 1px;
   font-size: 18px;
-  color: var(--main-color);
+  color: #fff;
   text-transform: capitalize;
   margin-right: 15px;
   padding-right: 15px;
