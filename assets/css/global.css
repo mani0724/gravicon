@@ -63,7 +63,7 @@
 
 :root {
   /* #e18f4d in decimal RGB */
-  --main-color: #09094c;
+  --main-color: #111159;
   --main-color-rgb: rgb(9, 9, 76);
 
   /* #1c0d00 in decimal RGB */
@@ -115,8 +115,8 @@
   --color-thirteen-rgb: 15, 14, 13;
 
   /* #1b140e in decimal RGB */
-  --color-fourteen: rgb(27, 20, 14);
-  --color-fourteen-rgb: 27, 20, 14;
+  --color-fourteen: #44120e;
+  --color-fourteen-rgb: 68, 18, 14;
 
   /* #9c5e2d in decimal RGB */
   --color-fifteen: rgb(156, 94, 45);
@@ -455,7 +455,7 @@ p {
 h1 {
   line-height: 100px;
   font-weight: 700;
-  font-size: 100px;
+  font-size: 60px;
 }
 
 h2 {
@@ -473,7 +473,7 @@ h3 {
 h4 {
   line-height: 34px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 19px;
 }
 
 h5 {
@@ -1134,10 +1134,10 @@ img {
   letter-spacing: 1px;
   margin-bottom: 25px;
   display: inline-block;
-  color: var(--main-color);
+  color: #ffffff;
   text-transform: uppercase;
-  border-top: 1px solid var(--main-color);
-  border-bottom: 1px solid var(--main-color);
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 .sec-title_title i {
@@ -1163,7 +1163,7 @@ img {
   line-height: 34px;
   font-size: 18px;
   margin-top: 30px;
-  color: var(--color-seven);
+  color: #000;
 }
 
 .sec-title.light .sec-title_text {

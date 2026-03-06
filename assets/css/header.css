@@ -17,7 +17,7 @@
 
 .header-top {
   position: relative;
-  background-color: var(--color-two);
+  background-color: #111159;
 }
 
 .header-top .left-box {
@@ -47,7 +47,7 @@
   margin-right: 5px;
   display: inline-block;
   color: var(--white-color);
-  background-color: var(--color-four);
+  background-color: #111159;
 }
 
 .header_socials a:hover {
@@ -174,7 +174,7 @@
 
 .main-header .header-lower .nav-outer {
   position: relative;
-  margin-left: 80px;
+  margin-left: 330px;
 }
 
 .main-header .header-lower .logo-box {
@@ -196,7 +196,6 @@
   bottom: 0px;
   width: 300%;
   z-index: -1;
-  background-color: var(--main-color);
 }
 
 .main-header .main-menu .navigation > li:nth-child(7) > ul,
