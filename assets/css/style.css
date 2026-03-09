@@ -3988,8 +3988,8 @@
   position: relative;
   text-align: left;
   padding: 28px 15px 28px 40px;
-  /* background: linear-gradient(135deg, #44120e, #dfb259); */
-  background-color: #111159;
+  /* background: linear-gradient(135deg, #44120e, ); */
+  background-color: #dfb259;
 }
 
 /* .projects-block_three-content_inner:before {
