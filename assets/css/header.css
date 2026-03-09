@@ -440,6 +440,7 @@
 .main-header .main-menu .navigation > li.current > a {
   opacity: 1;
   color: var(--main-color);
+  font-weight: 700;
 }
 
 .main-header .main-menu .navigation > li > ul {
