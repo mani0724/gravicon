@@ -104,7 +104,7 @@
                   <div class="logo-box">
                     <div class="logo">
                       <a href="index.html"
-                        ><img src="assets/images/logo-2.png" alt="" title=""
+                        ><img src="assets/images/logo-2.svg" alt="" title=""
                       /></a>
                     </div>
                   </div>
@@ -309,7 +309,7 @@
                       <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                         <label>Phone</label>
                         <input
-                          type="text"
+                          type="tel"
                           name="phone"
                           placeholder="Your Phone"
                           required=""
@@ -319,7 +319,7 @@
                       <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                         <label>Email</label>
                         <input
-                          type="text"
+                          type="email"
                           name="email"
                           placeholder="Your Email"
                           required=""
@@ -373,7 +373,7 @@
                       <div class="footer-widget footer-two_logo-widget">
                         <div class="footer-logo">
                           <a href="index.html"
-                            ><img src="assets/images/logo.png" alt="" title=""
+                            ><img src="assets/images/logo.svg" alt="" title=""
                           /></a>
                         </div>
                         <div class="footer-text">
@@ -513,6 +513,86 @@
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
       </svg>
     </div>
+
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          let username = document
+            .querySelector('input[name="username"]')
+            .value.trim();
+          let lastname = document
+            .querySelector('input[name="lastname"]')
+            .value.trim();
+          let phone = document
+            .querySelector('input[name="phone"]')
+            .value.trim();
+          let email = document
+            .querySelector('input[name="email"]')
+            .value.trim();
+          let message = document
+            .querySelector('textarea[name="message"]')
+            .value.trim();
+
+          let nameRegex = /^[A-Za-z\s]+$/;
+          let phoneRegex = /^[0-9]{10}$/;
+          let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if (username === "") {
+            alert("First name is required");
+            e.preventDefault();
+            return;
+          }
+
+          if (!nameRegex.test(username)) {
+            alert("First name should contain only letters");
+            e.preventDefault();
+            return;
+          }
+
+          if (lastname === "") {
+            alert("Last name is required");
+            e.preventDefault();
+            return;
+          }
+
+          if (!nameRegex.test(lastname)) {
+            alert("Last name should contain only letters");
+            e.preventDefault();
+            return;
+          }
+
+          if (phone === "") {
+            alert("Phone number is required");
+            e.preventDefault();
+            return;
+          }
+
+          if (!phoneRegex.test(phone)) {
+            alert("Phone must be 10 digits");
+            e.preventDefault();
+            return;
+          }
+
+          if (email === "") {
+            alert("Email is required");
+            e.preventDefault();
+            return;
+          }
+
+          if (!emailRegex.test(email)) {
+            alert("Enter a valid email address");
+            e.preventDefault();
+            return;
+          }
+
+          if (message.length < 10) {
+            alert("Message must be at least 10 characters");
+            e.preventDefault();
+            return;
+          }
+        });
+    </script>
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/popper.min.js"></script>

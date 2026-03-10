@@ -187,6 +187,11 @@
   z-index: 1;
   padding: 10px 30px 10px 0px;
 }
+.logo img {
+  height: 81px;
+  width: auto;
+  display: block;
+}
 
 .main-header .header-lower .logo-box .logo:before {
   position: absolute;
